@@ -6,8 +6,8 @@ export default function ClientsScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Clients Screen</Text>
-      <Button title="Go to Client (A)" onPress={() => router.push('/(tabs)/clients/client/A')} />
-      <Button title="Go to Agenda Tab" onPress={() => router.push('/(tabs)/agenda')} />
+      <Button title="Go to Client (A)" onPress={() => router.push('/(tabs)/clients/client/A' , { withAnchor: true })} />
+      <Button title="Go to Agenda Tab" onPress={() => router.push('/(tabs)/agenda' , { withAnchor: true })} />
     </View>
   );
 }
